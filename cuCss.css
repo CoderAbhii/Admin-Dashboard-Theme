@@ -1,0 +1,199 @@
+/* Global Size Of Material Icons */
+
+.material-symbols-outlined {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+/* Update And Delete Modal Id Selector */
+#exampleModal2 .btn-success,
+#exampleModal2 .btn-danger {
+  width: 40%;
+}
+
+/* Logout User Icon Image */
+.preview-icon .material-symbols-outlined {
+  padding-right: 0;
+  font-size: 1.3rem;
+}
+
+/* Update Modal Close Button */
+.edit-modal button.btn-close {
+  background-color: #fff;
+  border: none;
+}
+
+/* Update Modal Iconn */
+.edit-modal .material-symbols-outlined {
+  font-size: 1.5rem;
+}
+
+/* Delete Modal Close Button */
+.delete-modal button.btn-close {
+  background-color: #fff;
+  border: none;
+}
+
+/* Delete Modal Icon */
+.delete-modal .material-symbols-outlined {
+  font-size: 1.5rem;
+}
+
+/* Delete Modal Content */
+.delete-modal {
+  margin-top: 50%;
+}
+
+/* Logout For Mobile View */
+.logout-mobile-view {
+  margin: 1rem;
+  display: none;
+}
+.logout-mobile-view img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.logout-mobile-view span {
+  color: #000;
+  font-size: 1rem;
+}
+/* Logout For Mobile View */
+
+
+
+/* Transaction Image */
+.transaction-img{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* Analysis Image */
+.analysis-img{
+ background-color: transparent;
+}
+
+/* Reservation Button */
+.reservation-btn{
+  background-color: #00c8bf;
+  color: #fff;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.reservation-btn:hover{
+  color: #fff;
+}
+
+
+/* Reservation PopUp */
+.reservation-modal-close-btn{
+  background-color: #fff;
+  border: none;
+}
+.reservation-modal-close-btn span{
+  font-size: 1.5rem;
+  padding-right: 0;
+  transition: 0.5s all;
+}
+.reservation-modal-close-btn span:hover{
+  background-color: #00c8bf;
+  color: #fff;
+}
+
+.reservation-table-data {
+  overflow: auto;
+  padding: 1rem 3rem 4rem 3rem;
+}
+.reservation-table-data table {
+  border-collapse: collapse;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+  width: 200vw;
+}
+
+.reservation-table-data tr {
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+
+.reservation-table-data th,
+.reservation-table-data td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.reservation-table-data #header {
+  background-color: #00c8bf;
+  color: #fff;
+}
+
+.reservation-table-data h1 {
+  font-weight: 600;
+  text-align: center;
+  background-color: #16a085;
+  color: #fff;
+  padding: 10px 0px;
+}
+
+.reservation-table-data tr:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.03);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 767px) {
+  .reservation-table-data table {
+    width: 600vw;
+}
+  .reservation-table-data {
+    padding: 1rem 1rem;
+}
+.filter-area {
+  flex-direction: column;
+}
+.filter-area .col-md-5 {
+  justify-content: center !important;
+  margin-top: 1rem;
+}
+.filter-area input{
+  width: 100% !important;
+}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .reservation-table-data table {
+    width: 300vw;
+}
+.col-md-5:nth-child(1) {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.col-md-5:nth-child(2) {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+}
+
+.filter-area {
+  margin-bottom: 1rem;
+}
+.filter-area select{
+  border: 1px solid #888;
+  border-radius: 20%;
+  width: 4.5rem;
+}
+.filter-area .col-md-5{
+  justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.filter-area .col-md-5 p{
+  font-size: 1rem;
+}
+
+.filter-area input{
+  border: 1px solid #888;
+  border-radius: 5%;
+  width: 60%;
+}

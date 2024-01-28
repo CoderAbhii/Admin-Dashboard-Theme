@@ -1,0 +1,37 @@
+ @font-face {
+  font-family: 'typicons';
+  font-weight: normal;
+  font-style: normal;
+  src: url('typicons.ttf');
+}
+ 
+.typcn:before {
+  font-family: 'typicons';
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+
+.typcn-plus:before { 
+  content: '\e0cf'; /* '' */
+} 
+
+.typcn-minus:before { 
+  content: '\e0bd'; /* '' */
+} 
+
+.typcn-th-menu:before { 
+  content: '\e116'; /* '' */
+  color: #000;
+} 
+
+.typcn-chevron-right:before {
+  content: '\e049';
+}

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>EWS Admin</title>
+  <link rel="stylesheet" href="/vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/cuCss.css">
+  <link rel="stylesheet" href="/media.css">
+
+  <link rel="stylesheet" href="/pages/Meet_Assist/New_Request/new_request.css">
+  <script src="/pages/Meet_Assist/New_Request/new_request.js"></script>
+  
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <i class="typcn typcn-delete-outline" id="bannerClose"></i>
+
+  <div class="container-scroller">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand brand-logo" href="/"><img
+              src="/images/ewsLogo.png" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="/"><img
+              src="/images/ewsLogo.png" alt="logo" /></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img
+                src="https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg?w=740&t=st=1674250495~exp=1674251095~hmac=dfbdebf18324f93e41b708f4cd560968b5fcf326e418c579a6cb4a07b2f957db"
+                alt="profile" />
+              <span class="nav-profile-name">Rocco Developer</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="typcn typcn-cog-outline text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="typcn typcn-eject text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-user-status dropdown">
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-date dropdown">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;">
+              <h6 class="date mb-0">Today : Jan 22, 2023</h6>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+              id="messageDropdown" href="#" data-toggle="dropdown">
+              <span class="material-symbols-outlined">
+                notifications
+              </span>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+              aria-labelledby="messageDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img
+                    src="https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg?w=740&t=st=1674250495~exp=1674251095~hmac=dfbdebf18324f93e41b708f4cd560968b5fcf326e418c579a6cb4a07b2f957db"
+                    alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Test User 1
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Meet & Assist - BOM
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img
+                    src="https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg?w=740&t=st=1674250495~exp=1674251095~hmac=dfbdebf18324f93e41b708f4cd560968b5fcf326e418c579a6cb4a07b2f957db"
+                    alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Test User 2
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Meet & Assist - DBX
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img
+                    src="https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg?w=740&t=st=1674250495~exp=1674251095~hmac=dfbdebf18324f93e41b708f4cd560968b5fcf326e418c579a6cb4a07b2f957db"
+                    alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Test User 3
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Meet & Assist - BLR
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-0">
+            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+              id="notificationDropdown" href="#" data-toggle="dropdown">
+              <span class="material-symbols-outlined">
+                settings
+                </span>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+              aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Settings</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <span class="material-symbols-outlined">
+                      settings
+                      </span>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Internal Server Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    10 hours ago
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <span class="material-symbols-outlined">
+                      settings
+                      </span>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Register New User</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <span class="material-symbols-outlined">
+                      person
+                      </span>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="typcn typcn-th-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <nav class="navbar-breadcrumb col-xl-12 col-12 d-flex flex-row p-0">
+      <div class="navbar-links-wrapper d-flex align-items-stretch">
+        <div class="nav-link">
+          <!-- <a href="/"><span class="material-symbols-outlined">
+              person
+            </span></a> -->
+        </div>
+        <div class="nav-link">
+          <!-- <a href="/"><span class="material-symbols-outlined">
+              person
+            </span></a> -->
+        </div>
+        <div class="nav-link">
+          <!-- <a href="/"><span class="material-symbols-outlined">
+              person
+            </span></a> -->
+        </div>
+        <div class="nav-link">
+          <!-- <a href="/"><span class="material-symbols-outlined">
+              person
+            </span></a> -->
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item ml-0">
+            <h4 class="mb-0">Dashboard</h4>
+          </li>
+          <li class="nav-item">
+            <div class="d-flex align-items-baseline">
+              <p class="mb-0">Home</p>
+              <i class="typcn typcn-chevron-right"></i>
+              <p class="mb-0">Main Dasboard</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-search d-none d-md-block mr-0">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search..." aria-label="search"
+                aria-describedby="search">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search">
+                  <span class="material-symbols-outlined">
+                    search
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="container-fluid page-body-wrapper">
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close typcn typcn-times"></i>
+      </div>
+
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <span class="material-symbols-outlined">
+                dashboard
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="material-symbols-outlined">
+                admin_panel_settings
+              </span>
+              <span class="menu-title">Admin</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Admin/invoice_number_series_check.html"> Invoice
+                    Number Series Check</a></li>
+               
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false"
+              aria-controls="form-elements">
+              <span class="material-symbols-outlined">
+                handshake
+              </span>
+              <span class="menu-title">Meet & Assist</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="/pages/Meet_Assist/New_Request/new_request.html"> New Request
+                  </a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/Meet_Assist/View_Request/view_request.html"> View Request
+                  </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <span class="material-symbols-outlined">
+                corporate_fare
+              </span>
+              <span class="menu-title">Corporate Meet & Greet</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Corporate_Meet_Assist/B2B_Meet_Greet_List/b2b_meet_assist_list.html"> B-2-B Meet & Greet List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/pages/Corporate_Meet_Assist/B2B_Payment_Details/b2b_payment_details.html"> B-2-B Payment Details</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <span class="material-symbols-outlined">
+                touch_app
+              </span>
+              <span class="menu-title">Walk-In Customer</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Walk-In_Customer/B2C_Maas_List/b2c_maas_list.html">B-2-C Mass List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/pages/Walk-In_Customer/B2C_Payment_List/b2c_payment_list.html">B-2-C Payment Details</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <span class="material-symbols-outlined">
+                problem
+              </span>
+              <span class="menu-title">Customer Enquiry</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Customer_Enquiry/enquiry_list.html"> Enquiry List</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="material-symbols-outlined">
+                settings
+              </span>
+              <span class="menu-title">Setting</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Setting/My_Profile/my_profile.html"> My Profile </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/pages/Setting/Change_Password/change_password.html"> Change Password </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <span class="material-symbols-outlined">
+                public
+              </span>
+              <span class="menu-title">Airport Porter Service</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Airpor_Porter_Service/View_All_Airport_Porter/view_all_airport_porter.html"> View All Airport Porter </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/pages/Airpor_Porter_Service/Offline_Booking/offline_booking.html"> Offline Booking </a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Reservation Form (Meet & Assist)</h4>
+             
+                   <form class="form-sample">
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Service Type</label>
+                      <div class="col-sm-9">
+                        <select class="form-control">
+                          <option>Select</option>
+                          <option>International</option>
+                          <option>Domestic</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Trip Type</label>
+                      <div class="col-sm-9">
+                        <select class="form-control">
+                          <option>Select</option>
+                          <option>Arrival</option>
+                          <option>Departure</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Origin</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter Origin">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Destination </label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter Destination">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Date Of Travel</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="datepicker" placeholder="MM/DD/YYYY">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Email </label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" value="info3@eliteworldservices.com" placeholder="Enter Email">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Flight Time</label>
+                      <div class="col-sm-4">
+                        <select class="form-control">
+                          <option>00</option>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-4">
+                        <select class="form-control">
+                          <option>00</option>
+                          <option>05</option>
+                          <option>10</option>
+                          <option>15</option>
+                          <option>20</option>
+                          <option>25</option>
+                          <option>30</option>
+                          <option>35</option>
+                          <option>40</option>
+                          <option>45</option>
+                          <option>50</option>
+                          <option>55</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Flight Details</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter Flight Details">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Remarks</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter Remarks">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">No. Of Adult</label>
+                      <div class="col-sm-9">
+                        <select class="form-control" id="noOfGuest" onchange="guestFunction()">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="adult-title">
+                  Adult Guest Details :
+                </p>
+                <div class="row" id="adult_one">
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="First Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Last Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Age">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="PNR">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Contact No">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <select class="form-control adult-input">
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="adult_two">
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="First Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Last Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Age">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="PNR">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Contact No">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <select class="form-control adult-input">
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="adult_three">
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="First Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Last Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Age">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="PNR">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Contact No">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <select class="form-control adult-input">
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="adult_four">
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="First Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Last Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Age">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="PNR">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Contact No">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <select class="form-control adult-input">
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="adult_five">
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="First Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Last Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Age">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="PNR">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control adult-input" placeholder="Contact No">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group row">
+                      <div class="col-sm-5">
+                        <select class="form-control adult-input">
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 mt-2">
+                    <button type="submit" class="btn btn-success mr-5">Submit</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                  </div>
+                </div>
+               
+                   </form>
+               
+             
+            </div>
+          </div>
+        </div>
+       
+        <footer class="footer">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-sm-flex justify-content-center justify-content-center">
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023 <a
+                    href="https://www.bootstrapdash.com/" class="text-muted"
+                    target="_blank">www.eliteworldservices.com</a>. All
+                  rights reserved.</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+  
+</div>
+
+  <script src="/vendors/js/vendor.bundle.base.js"></script>
+  <script src="/vendors/chart.js/Chart.min.js"></script>
+  <script src="/js/off-canvas.js"></script>
+  <script src="/js/hoverable-collapse.js"></script>
+  <script src="/js/template.js"></script>
+  <script src="/js/settings.js"></script>
+  <script src="/js/todolist.js"></script>
+  <script src="/js/dashboard.js"></script>
+
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      var date = new Date();
+      var currentMonth = date.getMonth();
+      var currentDate = date.getDate();
+      var currentYear = date.getFullYear();
+      $('#datepicker').datepicker({
+        minDate: new Date(currentYear, currentMonth, currentDate)
+      });
+    });
+  </script>
+</body>
+
+</html>

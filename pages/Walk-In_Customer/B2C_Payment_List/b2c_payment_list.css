@@ -1,0 +1,27 @@
+select.form-control{
+    outline: none;
+    border-bottom: 1px solid #888;
+}
+select.form-control:focus-visible{
+    outline: none;
+    border-bottom: 1px solid #888;
+}
+.entry-controller{
+    display: flex;
+}
+.col-sm-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+@media only screen and (max-width: 767px){
+    .entry-controller {
+        flex-direction: column;
+    }
+    .col-sm-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}

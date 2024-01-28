@@ -1,0 +1,24 @@
+#adult_two, #adult_three, #adult_four, #adult_five{
+    display: none;
+}
+
+select.form-control{
+    outline: none;
+    border-bottom: 1px solid #888;
+}
+select.form-control:focus-visible{
+    outline: none;
+    border-bottom: 1px solid #888;
+}
+input.form-control{
+    outline: none;
+    border-color: transparent;
+    border-bottom: 1px solid #888;
+}
+input.form-control:focus{
+    outline: none;
+    border-color: transparent;
+    border-bottom: 1px solid #888;
+}
+
+

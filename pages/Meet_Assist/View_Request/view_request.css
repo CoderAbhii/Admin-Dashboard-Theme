@@ -1,0 +1,84 @@
+select.form-control{
+    outline: none;
+    border-bottom: 1px solid #888;
+}
+select.form-control:focus-visible{
+    outline: none;
+    border-bottom: 1px solid #888;
+}
+input.form-control{
+    outline: none;
+    border-color: transparent;
+    border-bottom: 1px solid #888;
+}
+input.form-control:focus{
+    outline: none;
+    border-color: transparent;
+    border-bottom: 1px solid #888;
+}
+.col-sm-9{
+    flex: 0 0 95%;
+    max-width: 95%;
+}
+button{
+    width: 100%;
+}
+
+
+
+div.c{
+    position: relative;
+  }
+  div.c #faq-1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    visibility: 0;
+  }
+  div.c h1{
+    background: rgb(0, 200, 191);
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+    font-size: 1rem;
+  }
+  div.c .accordion-icon::before{
+    content:"";
+    display: inline-block;
+    border: 10px solid transparent;
+    border-left: 15px solid #fff;
+  }
+  div.c .accordion-icon{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  div.c div.p{
+    max-height:0px;
+    overflow: hidden;
+    transition:max-height 0.5s;
+    background-color: white;
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  div.c div.p p {
+    padding:2em;
+  }
+  div.c #faq-1:checked ~ h1 .accordion-icon::before{
+    border-left:10px solid transparent;
+    border-top:15px solid #fff;
+    margin-top:12px;
+    margin-right:10px;
+  }
+  div.c #faq-1:checked ~ h1 ~ div.p{
+    max-height:100vh;
+    padding: 2rem;
+    overflow: scroll;
+  }
+  div.c a{
+    color:steelblue;
+  }
+  

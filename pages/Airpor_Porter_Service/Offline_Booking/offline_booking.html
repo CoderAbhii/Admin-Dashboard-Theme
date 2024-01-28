@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>EWS Admin</title>
+  <link rel="stylesheet" href="/vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/cuCss.css">
+  <link rel="stylesheet" href="/media.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <i class="typcn typcn-delete-outline" id="bannerClose"></i>
+
+  <div class="container-scroller">
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            <span class="material-symbols-outlined">
+              dashboard
+            </span>
+            <span class="menu-title">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <span class="material-symbols-outlined">
+              admin_panel_settings
+            </span>
+            <span class="menu-title">Admin</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-basic">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="/pages/Admin/invoice_number_series_check.html"> Invoice
+                  Number Series Check</a></li>
+             
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false"
+            aria-controls="form-elements">
+            <span class="material-symbols-outlined">
+              handshake
+            </span>
+            <span class="menu-title">Meet & Assist</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="form-elements">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"><a class="nav-link" href="/pages/Meet_Assist/New_Request/new_request.html"> New Request
+                </a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/Meet_Assist/View_Request/view_request.html"> View Request
+                </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+            <span class="material-symbols-outlined">
+              corporate_fare
+            </span>
+            <span class="menu-title">Corporate Meet & Greet</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="charts">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="/pages/Corporate_Meet_Assist/B2B_Meet_Greet_List/b2b_meet_assist_list.html"> B-2-B Meet & Greet List</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/pages/Corporate_Meet_Assist/B2B_Payment_Details/b2b_payment_details.html"> B-2-B Payment Details</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+            <span class="material-symbols-outlined">
+              touch_app
+            </span>
+            <span class="menu-title">Walk-In Customer</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="tables">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="/pages/Walk-In_Customer/B2C_Maas_List/b2c_maas_list.html">B-2-C Mass List</a></li>
+              <li class="nav-item"> <a class="nav-link" href="/pages/Walk-In_Customer/B2C_Payment_List/b2c_payment_list.html">B-2-C Payment Details</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+            <span class="material-symbols-outlined">
+              problem
+            </span>
+            <span class="menu-title">Customer Enquiry</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="icons">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="/pages/Customer_Enquiry/enquiry_list.html"> Enquiry List</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+            <span class="material-symbols-outlined">
+              settings
+            </span>
+            <span class="menu-title">Setting</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="auth">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="/pages/Setting/My_Profile/my_profile.html"> My Profile </a></li>
+              <li class="nav-item"> <a class="nav-link" href="/pages/Setting/Change_Password/change_password.html"> Change Password </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+            <span class="material-symbols-outlined">
+              public
+            </span>
+            <span class="menu-title">Airport Porter Service</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="error">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="/pages/Airpor_Porter_Service/View_All_Airport_Porter/view_all_airport_porter.html"> View All Airport Porter </a></li>
+              <li class="nav-item"> <a class="nav-link" href="/pages/Airpor_Porter_Service/Offline_Booking/offline_booking.html"> Offline Booking </a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+
+    <div class="container-fluid page-body-wrapper">
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close typcn typcn-times"></i>
+      </div>
+
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span class="material-symbols-outlined">
+                dashboard
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="material-symbols-outlined">
+                admin_panel_settings
+              </span>
+              <span class="menu-title">Admin</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Admin/invoice_number_series_check.html"> Invoice
+                    Number Series Check</a></li>
+               
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false"
+              aria-controls="form-elements">
+              <span class="material-symbols-outlined">
+                handshake
+              </span>
+              <span class="menu-title">Meet & Assist</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="/pages/Meet_Assist/New_Request/new_request.html"> New Request
+                  </a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/Meet_Assist/View_Request/view_request.html"> View Request
+                  </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <span class="material-symbols-outlined">
+                corporate_fare
+              </span>
+              <span class="menu-title">Corporate Meet & Greet</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Corporate_Meet_Assist/B2B_Meet_Greet_List/b2b_meet_assist_list.html"> B-2-B Meet & Greet List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/pages/Corporate_Meet_Assist/B2B_Payment_Details/b2b_payment_details.html"> B-2-B Payment Details</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <span class="material-symbols-outlined">
+                touch_app
+              </span>
+              <span class="menu-title">Walk-In Customer</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Walk-In_Customer/B2C_Maas_List/b2c_maas_list.html">B-2-C Mass List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/pages/Walk-In_Customer/B2C_Payment_List/b2c_payment_list.html">B-2-C Payment Details</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <span class="material-symbols-outlined">
+                problem
+              </span>
+              <span class="menu-title">Customer Enquiry</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Customer_Enquiry/enquiry_list.html"> Enquiry List</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="material-symbols-outlined">
+                settings
+              </span>
+              <span class="menu-title">Setting</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Setting/My_Profile/my_profile.html"> My Profile </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/pages/Setting/Change_Password/change_password.html"> Change Password </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <span class="material-symbols-outlined">
+                public
+              </span>
+              <span class="menu-title">Airport Porter Service</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/pages/Airpor_Porter_Service/View_All_Airport_Porter/view_all_airport_porter.html"> View All Airport Porter </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/pages/Airpor_Porter_Service/Offline_Booking/offline_booking.html"> Offline Booking </a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="row">
+              
+            </div>
+        </div>
+       
+        <footer class="footer">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-sm-flex justify-content-center justify-content-center">
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023 <a
+                    href="https://www.bootstrapdash.com/" class="text-muted"
+                    target="_blank">www.eliteworldservices.com</a>. All
+                  rights reserved.</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+  
+</div>
+
+  <script src="/vendors/js/vendor.bundle.base.js"></script>
+  <script src="/vendors/chart.js/Chart.min.js"></script>
+  <script src="/js/off-canvas.js"></script>
+  <script src="/js/hoverable-collapse.js"></script>
+  <script src="/js/template.js"></script>
+  <script src="/js/settings.js"></script>
+  <script src="/js/todolist.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+
+</html>
